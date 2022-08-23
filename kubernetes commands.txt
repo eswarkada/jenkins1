@@ -1,0 +1,68 @@
+kubectl exec -it podname [-c] -- /bin/bash
+
+kubectl logs podname -n namespace
+
+
+cd /proc
+ls
+cd 1
+cat cmdline
+exit
+
+kubectl describe pod podname
+
+kubectl api-versions
+
+kubectl api-resources
+
+"error : unable to recognize". \\kubernetes\\mypod.yaml": no matches for kind "Pod" in version "v1beta1"
+
+kubectl explain pod
+
+
+kubectl create -f  file.yaml
+
+kubectl get pods
+
+api/etcd
+kube proxy
+
+don't need public private certificates for access kubernetes api
+
+by using kube proxy we can access kubenetes api
+
+api's restful (http get post delete put)
+
+linux 
+# kubectl proxy --port=8001&   ( "&" run in backgroung)
+
+
+> kubectl proxy --port= 8001
+
+open other cmd
+> curl http://localhost:8001/version
+>curl http://localhost:8001/api/v1/namespaces/default
+>curl http://localhost:8001/api/v1/namespaces/default/pods
+>curl http://localhost:8001/api/v1/namespaces/default/pods/busybox
+
+
+
+minkube addons list
+minikube addons enable ingress
+minikube ssh (inside into minikube)
+docker ps | grep -i ingress
+exit
+
+
+minikube ip
+kubectl create deployement web --image=gcr.io/google-samples/hello-app:1.0
+kubectl get deployments
+kubectl get pods
+kubectl get svc
+kubectl expose deployment web --type=NodePort --port=8080
+kubectl get svc
+minikube ip
+curl http://ip:32541
+
+i mean, to change herb-budget-service repository branch in
+

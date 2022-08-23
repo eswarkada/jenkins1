@@ -1,0 +1,95 @@
+14007620
+14026598
+
+cfss@123
+
+api.test.herb.apcfss.in
+login/authenticate
+{"username":"14254562","password":"cfss@123"}
+
+C_access_token
+
+{"access_token":"(.*?)",
+
+$1$
+1
+NULL
+
+HHTP HEADER MANAGER
+
+content-type	application/json
+accept	application/json, text/plain, */*
+access_token	${C_access_token}
+
+
+
+1) send request to target server
+2) get statistics information of target server
+3) generate test report in different format
+
+basic elements in jmeter
+- Thread Group
+- Samplers
+- Listeners
+- Configuration elements
+
+
+
+create first jmeter test
+
+test plan is a container contains lot of info to start the testing
+
+thread group defines no of users
+ramp up period 
+
+1) start jmeter
+2) create a test plan
+3) create a thread group (users)
+4) add a sampler (https)
+5) add listeners
+6) ru test plan
+7) save test plan
+
+
+Recording in Jmeter
+
+add nontestElement - http recording
+set proxy on browser
+start recordong in different recording controller
+start scenario recording
+stop recording and save.
+
+
+simple controller
+modular
+test fragment
+includer
+
+random controller
+random order 
+
+interleave controller
+
+throughput controller
+
+correlation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
